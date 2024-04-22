@@ -25,7 +25,7 @@ const images = [
 
 const Instagram: React.FC = () => {
   return (
-    <main className="flex flex-col pt-3 bg-white">
+    <main className="flex flex-col pt-3 bg-white font-Poppins">
       <h1 className="self-center text-5xl font-bold text-center leading-[68.16px] text-zinc-700 max-md:text-4xl">Instagram</h1>
       <p className="self-center mt-5 text-xl leading-8 text-center text-zinc-700">@yourinstagram_offical</p>
       <section className="md:flex hidden gap-2 px-5 mt-10 justify-center items-center">

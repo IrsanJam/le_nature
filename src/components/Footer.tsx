@@ -40,19 +40,19 @@ const socialIcons = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex justify-center items-center px-16 py-20 bg-neutral-800 max-md:px-5 mt-14">
+    <footer className="flex justify-center items-center px-16 py-20 bg-neutral-800 max-md:px-5 mt-14 font-Poppins">
       <div className="flex flex-col mt-5 w-full max-w-[1177px] max-md:max-w-full">
         <div className="flex gap-5 justify-between items-start w-full max-md:flex-wrap max-md:max-w-full">
-          <div className="flex flex-col text-sm leading-5 text-neutral-400">
-            <h3 className="text-xl font-bold leading-8">About</h3>
-            <nav>
-              <LinkItem text="Home" />
-              <LinkItem text="Shop" />
-              <LinkItem text="Our story" />
-              <LinkItem text="Blogs" />
-            </nav>
-          </div>
-          <div className="flex gap-5 justify-between text-sm leading-5 text-neutral-400">
+          <div className="lg:flex grid grid-cols-2 gap-5 justify-between text-sm leading-5 text-neutral-400">
+            <div className="flex flex-col text-sm leading-5 text-neutral-400">
+              <h3 className="text-xl font-bold leading-8">About</h3>
+              <nav>
+                <LinkItem text="Home" />
+                <LinkItem text="Shop" />
+                <LinkItem text="Our story" />
+                <LinkItem text="Blogs" />
+              </nav>
+            </div>
             <div className="flex flex-col self-start">
               <h3 className="text-xl font-bold leading-8">Help</h3>
               <nav>
@@ -69,21 +69,20 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col self-stretch max-md:max-w-full">
             <h3 className="text-2xl font-bold leading-9 text-neutral-400 max-md:max-w-full">Receive new promotions</h3>
-            <p className="mt-5 text-base leading-7 text-neutral-400 max-md:max-w-full">Duis ea tempor commodo amet reprehende</p>
             <form className="flex gap-3 mt-3.5 text-lg leading-7 max-md:flex-wrap">
               <label htmlFor="email" className="sr-only">
                 Input your email
               </label>
-              <div className="flex flex-auto gap-2 px-5 py-3 rounded-lg border border-solid bg-black bg-opacity-0 border-zinc-400 text-neutral-300 max-md:px-5">
+              <div className="flex flex-auto gap-2 px-5 py-3 rounded-lg border border-solid bg-black bg-opacity-0 border-zinc-400 text-neutral-300 ">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/093aa3f74fb62adf3b8be4612f3911163b64820831aea1ecc04751eea2bb79a6?apiKey=5943fdb1ffaf406abdd952d3f158878b&"
                   alt=""
                   className="shrink-0 w-6 aspect-square"
                 />
-                <input type="email" id="email" placeholder="Input your email" className="flex-auto bg-transparent outline-none" />
+                <input type="email" id="email" placeholder="Input your email" className=" flex-auto bg-transparent outline-none w-[50%] " />
               </div>
-              <button type="submit" className="justify-center px-5 py-5 text-white whitespace-nowrap bg-cyan-500 rounded-md">
+              <button type="submit" className="justify-center md:px-5 px-3 py-3 md:py-5 text-white whitespace-nowrap bg-cyan-500 rounded-md">
                 Subscribe
               </button>
             </form>
@@ -104,13 +103,13 @@ const Footer: React.FC = () => {
               className="shrink-0 w-4 aspect-square"
             />
           </div>
-          <div className="flex gap-2.5 self-start mt-5 text-neutral-400">
+          <div className="flex  gap-2.5 self-start mt-5 text-neutral-400">
             <div className="grow">© 2022 Brand, Inc.</div>
-            <div className="my-auto text-xs leading-5">•</div>
+            <div className="my-auto text-xs leading-5 md:block hidden">•</div>
             <div>Privacy</div>
-            <div className="my-auto text-xs leading-5">•</div>
+            <div className="my-auto text-xs leading-5 md:block hidden">•</div>
             <div>Terms</div>
-            <div className="my-auto text-xs leading-5">•</div>
+            <div className="my-auto text-xs leading-5 md:block hidden">•</div>
             <div>Sitemap</div>
           </div>
         </div>

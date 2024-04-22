@@ -1,9 +1,9 @@
 const EventPromo = () => {
   return (
-    <div className="flex flex-col pt-2.5 bg-white my-20">
+    <div className="flex flex-col pt-2.5 bg-white my-20 font-Poppins">
       <div className="flex gap-5 justify-center items-center relative">
         <div className="md:text-5xl text-3xl font-bold text-center leading-[68.16px] text-zinc-700 ">Event promotion</div>
-        <span className="absolute right-0 justify-center items-center px-20 py-3.5 mt-2.5 text-sm leading-5 text-cyan-500 rounded  bg-black bg-opacity-0 max-md:pr-5">See all</span>
+        <span className="hidden md:block absolute right-0 justify-center items-center px-20 py-3.5 mt-2.5 text-sm leading-5 text-cyan-500 rounded  bg-black bg-opacity-0 max-md:pr-5">See all</span>
       </div>
       <div className="md:mt-14 mt-2 w-full max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -16,8 +16,8 @@ const EventPromo = () => {
                   className="object-cover absolute inset-0 size-full rounded-md"
                 />
                 <div className="relative text-3xl font-extrabold leading-10 w-[280px]">Relaxing & Pampering</div>
-                <div className="relative mt-6 text-xl leading-8 hidden md:block">Pariatur ad nisi ex tempor ea</div>
-                <button className="hover:opacity-65 relative justify-center px-10 py-3 mt-9 text-sm leading-5 text-white whitespace-nowrap bg-cyan-500 rounded max-md:px-5">Explore</button>
+                <div className="relative mt-6 text-xl leading-8 hidden md:block w-[60%] lg:font-thin drop-shadow-lg">Experience the ultimate relaxation and pampering with our </div>
+                <button className="hover:opacity-65 relative justify-center px-10 py-3 mt-9 text-sm leading-5 text-white whitespace-nowrap bg-cyan-500 rounded max-md:px-5 font-semibold tracking-wide">Explore</button>
               </div>
             </div>
           </div>
@@ -33,8 +33,8 @@ const EventPromo = () => {
                   Smooth &<br />
                   Bright Skin
                 </div>
-                <div className="relative mt-6 text-xl leading-8 hidden md:block">Pariatur ad nisi ex tempor ea</div>
-                <button className="hover:opacity-65 relative justify-center px-10 py-3 mt-9 text-sm leading-5 text-white whitespace-nowrap bg-cyan-500 rounded max-md:px-5">Explore</button>
+                <div className="font-thin relative mt-6 text-xl leading-8 hidden md:block w-[60%] drop-shadow-md">Discover the secret to smooth & bright skin with our products</div>
+                <button className="hover:opacity-65 relative justify-center px-10 py-3 mt-9 text-sm leading-5 text-white whitespace-nowrap bg-cyan-500 rounded max-md:px-5 font-semibold tracking-wide">Explore</button>
               </div>
             </div>
           </div>
