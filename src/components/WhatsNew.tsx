@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const WhatsNew = () => {
+  const navigate = useNavigate();
   return (
     <div id="blog" className="w-full md:px-20 px-5 my-14 font-Poppins">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -12,7 +15,9 @@ const WhatsNew = () => {
                     Read news feature allows users to stay updated with the latest information and developments, providing a seamless experience for accessing news content.
                   </div>
                   <div className="flex gap-5 justify-between mt-28 md:mb-0 mb-5 text-lg leading-7 text-cyan-500 max-md:pr-5 max-md:mt-10">
-                    <div className="justify-center px-5 py-5 bg-white rounded border border-cyan-500 border-solid hover:opacity-75">Explore more</div>
+                    <button onClick={() => navigate("/blog")} className="cursor-pointer justify-center px-5 py-5 bg-white rounded border border-cyan-500 border-solid hover:opacity-75">
+                      Explore more
+                    </button>
                     <img
                       loading="lazy"
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea5c9b330eb30199f2ef4900df29d591deb72835bde1a90d2a7de091b82d536d?apiKey=5943fdb1ffaf406abdd952d3f158878b&"

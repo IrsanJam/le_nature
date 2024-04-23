@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const EventPromo = () => {
+  const navigate = useNavigate();
   return (
     <div id="promo" className="flex flex-col pt-2.5 bg-white my-20 font-Poppins">
       <div className="flex gap-5 justify-center items-center relative">
         <div className="md:text-5xl text-3xl font-bold text-center leading-[68.16px] text-zinc-700 ">Event promotion</div>
-        <span className="hidden md:block absolute right-0 justify-center items-center px-20 py-3.5 mt-2.5 text-sm leading-5 text-cyan-500 rounded  bg-black bg-opacity-0 max-md:pr-5">See all</span>
+        <span className="cursor-pointer hidden md:block absolute right-0 justify-center items-center px-20 py-3.5 mt-2.5 text-sm leading-5 text-cyan-500 rounded  bg-black bg-opacity-0 max-md:pr-5" onClick={() => navigate("/promo")}>
+          See all
+        </span>
       </div>
       <div className="md:mt-14 mt-2 w-full max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">

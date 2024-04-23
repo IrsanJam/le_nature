@@ -20,10 +20,10 @@ const OurProduct = () => {
   const [loading, setLoading] = useState(false);
 
   const loadProducts = async () => {
-    setLoading(true);
     try {
       const response = await axios.get("https://6621dbd527fcd16fa6c81620.mockapi.io/kecantikan");
-      return setProduct(response.data);
+      setProduct(response.data);
+      setLoading(true);
     } catch (error) {
       setLoading(true);
     }
@@ -69,21 +69,21 @@ const OurProduct = () => {
       </div>
       <div className="flex justify-center items-center font-semibold gap-3">
         <button className="bg-cyan-400 border-[1px] border-cyan-500 text-white md:p-3 p-2 px-5 md:px-10 rounded-md">Best-Sellers</button>
-        <button className="bg-white text-[#00BDD6] md:p-3 p-2 px-5 border-[1px] border-cyan-400 rounded-md md:px-10">New Product</button>
+        <button onClick={() => navigate("/shop")} className="bg-white text-[#00BDD6] md:p-3 p-2 px-5 border-[1px] border-cyan-400 rounded-md md:px-10">
+          New Product
+        </button>
       </div>
-      <Carousel responsive={responsive} itemClass="carousel-item-padding-80-px" infinite>
-        {!loading ? (
-          <div className="flex justify-center items-center h-screen">
-            <img width="48" height="48" src="https://img.icons8.com/color-glass/48/iphone-spinner.png" className="animate-spin" alt="iphone-spinner" />
-          </div>
-        ) : (
-          products.map((item: productsType, index: number) => (
+      {!loading ? (
+        <div className="text-center my-20 w-full">Loading..</div>
+      ) : (
+        <Carousel responsive={responsive} itemClass="carousel-item-padding-80-px" infinite>
+          {products.map((item: productsType, index: number) => (
             <div key={index}>
               <CardProduct bestSeler image={item.image} key={item.id} directId={() => handleDirectID(item.id)} description={item.description} price={item.price} originalPrice={item.originalPrice} title={item.title} />
             </div>
-          ))
-        )}
-      </Carousel>
+          ))}
+        </Carousel>
+      )}
     </div>
   );
 };

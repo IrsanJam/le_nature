@@ -21,9 +21,15 @@ const Navbar = () => {
             <li onClick={() => navigate("/shop")} className="hover:text-cyan-400">
               Shop
             </li>
-            <li className="hover:text-cyan-400">Offers</li>
-            <li className="hover:text-cyan-400">Our Story</li>
-            <li className="hover:text-cyan-400">Blog</li>
+            <li onClick={() => navigate("/promo")} className="hover:text-cyan-400">
+              Promo
+            </li>
+            <li onClick={() => navigate("/story")} className="hover:text-cyan-400">
+              Our Story
+            </li>
+            <li onClick={() => navigate("/blog")} className="hover:text-cyan-400">
+              Blog
+            </li>
           </ul>
         </div>
 
