@@ -7,7 +7,7 @@ const Story: React.FC = () => {
     <>
       <Layout>
         <div
-          className="bg-cover blur-lg text-black bg-center flex items-center bg-black  h-[60vh] md:h-[80vh] drop-shadow-lg"
+          className="bg-cover blur-lg text-black bg-center flex items-center bg-black  h-[70vh] md:h-[80vh] drop-shadow-lg"
           style={{
             backgroundImage: `url(${image})`,
             filter: "blur(0.1px)",
@@ -28,15 +28,15 @@ const Story: React.FC = () => {
             <h2 className="text-xl font-bold mb-4">Testimonials</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-4 rounded-lg shadow-md">
-                <p>"I've been using this beauty product for a month now, and I can't believe the difference it has made to my skin"</p>
+                <p className="md:text-base text-sm">"I've been using this beauty product for a month now, and I can't believe the difference it has made to my skin"</p>
                 <p className="text-sm mt-2">- Sandra</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md">
-                <p>"I was skeptical at first, but this web many beauty products, I'm amazed at the resources"</p>
+                <p className="md:text-base text-sm">"I was skeptical at first, but this web many beauty products, I'm amazed at the resources"</p>
                 <p className="text-sm mt-2">- Cindy</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md">
-                <p>"This web help to find beauty product, significant improvement"</p>
+                <p className="md:text-base text-sm">"This web help to find beauty product, significant improvement"</p>
                 <p className="text-sm mt-2">- Lisa</p>
               </div>
             </div>

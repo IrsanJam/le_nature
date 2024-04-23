@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="w-full relative">
       <div className="w-full h-[70vh]">
-        <img src={hero} alt="hero" className="relative  object-cover md:object-fill  h-[70vh] md:blur-0 blur-[1px]  md:h-[80vh] w-full" />
+        <img src={hero} alt="hero" className="relative  object-cover md:object-fill  h-[90vh] md:blur-0 blur-[1px]  md:h-[80vh] w-full" />
       </div>
       <div className="absolute md:top-[35%] top-[35%] md:w-[60%] w-[80%] flex flex-col pl-10 md:pl-20 gap-4">
         <h1 className="font-bold md:text-6xl  text-5xl font-Poppins text-zinc-700">Gift for your skin</h1>
