@@ -64,10 +64,10 @@ const Detail = () => {
               </div>
             </div>
             <div className="md:px-20 px-5 md:flex flex-col font-Poppins">
-              <span className="font-bold text-2xl">Product description</span>
+              <span className="font-bold text-lg md:text-2xl">Product description</span>
               <div className="flex-col md:flex-row my-3 gap-8 justify-center items-start">
                 <div className="flex-col md:flex-row w-full">
-                  <p className=" font-light text-justify md:tracking-wide tracking-wider leading-7 text-sm ">
+                  <p className=" font-light  md:tracking-wide -tracking-wide text-justify md:leading-7 leading-5 text-sm w-[95%]">
                     <span className="font-semibold">{data?.title}</span> was Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem lorem aliquam sed lacinia quis. Nibh dictumst vulputate odio pellentesque sit quis ac, sit ipsum.
                     Sit rhoncus velit in sed massa arcu sit eu. Vitae et vitae eget lorem non dui. Sollicitudin ut mi adipiscing duis. Convallis in semper laoreet nibh leo. Vivamus malesuada ipsum pulvinar non rutrum risus dui, risus. Purus
                     massa velit iaculis tincidunt tortor, risus, scelerisque risus. In at lorem pellentesque orci aenean dictum dignissim in. Aenean pulvinar diam interdum ullamcorper. Vel urna, tortor, massa metus purus metus. Maecenas
