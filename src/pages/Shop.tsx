@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
-import { FC } from "react";
 import axios from "axios";
 import CardProduct from "../components/CardProduct";
 import { useNavigate } from "react-router-dom";
@@ -12,9 +11,11 @@ interface productsType {
   originalPrice: number;
   title: string;
   id: string;
+  directId?: () => void;
+  bestSeller: boolean;
 }
 
-const Shop: FC<productsType> = () => {
+const Shop = () => {
   const [category, setCategory] = useState("Semua");
   const [loading, setLoading] = useState(false);
   const [products, setProduct] = useState([]);
