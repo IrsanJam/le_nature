@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const OurStory = () => {
+  const navigate = useNavigate();
   return (
     <div id="story" className="flex flex-col pt-2.5 bg-white my-20 font-Poppins">
       <div className="flex gap-5 justify-center items-center relative">
         <div className="md:text-5xl text-3xl text-center font-bold leading-[68.16px] text-zinc-700 ">Our story</div>
-        <span className="hidden md:block absolute right-0 justify-center self-start px-20 py-3.5 mt-2.5 text-sm leading-5 text-cyan-500 rounded bg-black bg-opacity-0 max-md:pr-5">See all</span>
+        <span className="cursor-pointer hidden md:block absolute right-0 justify-center self-start px-20 py-3.5 mt-2.5 text-sm leading-5 text-cyan-500 rounded bg-black bg-opacity-0 max-md:pr-5" onClick={() => navigate("/story")}>
+          See all
+        </span>
       </div>
       <div className="md:mt-14 mt-7 relative">
         <img

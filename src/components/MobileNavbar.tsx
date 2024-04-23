@@ -55,20 +55,18 @@ const MobileNavbar = () => {
                 <input type="text" placeholder="Search Product" className="rounded-md outline-1 focus:outline-none focus:ring-black mx-2 w-full h-full" />
               </div>
               <ul className="cursor-pointer text-zinc-400 mt-5 ">
-                <a href="#product">
-                  <li onClick={() => navigate("/")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">
-                    Shop
-                  </li>
-                </a>
-                <a href="#promo">
-                  <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">Offers</li>
-                </a>
-                <a href="#story">
-                  <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">Our Story</li>
-                </a>
-                <a href="#blog">
-                  <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">Blog</li>
-                </a>
+                <li onClick={() => navigate("/shop")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">
+                  Shop
+                </li>
+                <li onClick={() => navigate("/promo")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">
+                  Promo
+                </li>
+                <li onClick={() => navigate("/story")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">
+                  Our Story
+                </li>
+                <li onClick={() => navigate("/blog")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">
+                  Blog
+                </li>
               </ul>
             </div>
             <div className="flex justify-center items-center cursor-pointer" onClick={() => setShowHam(!showHamMenu)}>
