@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "../components/Footer";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import Modal from "../components/Modal";
@@ -149,7 +148,6 @@ const Detail = () => {
                 </div>
               </div>
             </div>
-            <Footer />
           </>
         ) : (
           <div className="flex justify-center items-center h-screen">
