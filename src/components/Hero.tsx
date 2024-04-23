@@ -2,7 +2,7 @@ import hero from "/image/Image 1.png";
 
 const Hero = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative pt-40">
       <div className="w-full h-[70vh]">
         <img src={hero} alt="hero" className="relative  object-cover md:object-fill  h-[70vh] md:blur-0 blur-[1px]  md:h-[80vh] w-full" />
       </div>

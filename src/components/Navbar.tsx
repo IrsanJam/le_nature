@@ -18,7 +18,9 @@ const Navbar = () => {
 
         <div className="md:flex hidden md:justify-start lg:justify-end items-center gap-8 md:w-[35%] lg:w-[40%]">
           <ul className="flex justify-end items-center lg:text-base md:text-sm gap-5 font-semibold text-neutral-400 hover:cursor-pointer">
-            <li className="hover:text-cyan-400">Shop</li>
+            <li onClick={() => navigate("/shop")} className="hover:text-cyan-400">
+              Shop
+            </li>
             <li className="hover:text-cyan-400">Offers</li>
             <li className="hover:text-cyan-400">Our Story</li>
             <li className="hover:text-cyan-400">Blog</li>

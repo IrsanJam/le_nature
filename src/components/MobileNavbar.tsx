@@ -23,7 +23,7 @@ const MobileNavbar = () => {
               className="lg:hidden text-gray-500  hover:bg-gray-100  focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2.5 me-1"
             >
               <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
               <span className="sr-only">Search</span>
             </button>
@@ -38,7 +38,7 @@ const MobileNavbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
               </svg>
             </button>
           </div>
@@ -55,12 +55,20 @@ const MobileNavbar = () => {
                 <input type="text" placeholder="Search Product" className="rounded-md outline-1 focus:outline-none focus:ring-black mx-2 w-full h-full" />
               </div>
               <ul className="cursor-pointer text-zinc-400 mt-5 ">
-                <li onClick={() => navigate("/")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] p-2 border-zinc-200">
-                  Shop
-                </li>
-                <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] p-2 border-zinc-200">Offers</li>
-                <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] p-2 border-zinc-200">Our Story</li>
-                <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] p-2 border-zinc-200">Blog</li>
+                <a href="#product">
+                  <li onClick={() => navigate("/")} className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">
+                    Shop
+                  </li>
+                </a>
+                <a href="#promo">
+                  <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">Offers</li>
+                </a>
+                <a href="#story">
+                  <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">Our Story</li>
+                </a>
+                <a href="#blog">
+                  <li className="hover:text-white hover:rounded-md hover:bg-cyan-400 border-b-[0.5px] border-opacity-40 p-2 border-zinc-200">Blog</li>
+                </a>
               </ul>
             </div>
             <div className="flex justify-center items-center cursor-pointer" onClick={() => setShowHam(!showHamMenu)}>
