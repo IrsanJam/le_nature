@@ -41,7 +41,7 @@ const socialIcons = [
 const Footer: React.FC = () => {
   return (
     <footer className="flex justify-center items-center px-16 py-20 bg-neutral-800 max-md:px-5 mt-14 font-Poppins">
-      <div className="flex flex-col mt-5 w-full max-w-[1177px] max-md:max-w-full">
+      <div className="flex flex-col mt-5 md:mt-0 w-full max-w-[1177px] max-md:max-w-full">
         <div className="flex gap-5 justify-between items-start w-full max-md:flex-wrap max-md:max-w-full">
           <div className="lg:flex grid grid-cols-2 gap-5 justify-between text-sm leading-5 text-neutral-400">
             <div className="flex flex-col text-sm leading-5 text-neutral-400">
@@ -67,8 +67,8 @@ const Footer: React.FC = () => {
               <ContactItem label="Email:" value="name@email.com" />
             </div>
           </div>
-          <div className="flex flex-col self-stretch max-md:max-w-full">
-            <h3 className="text-2xl font-bold leading-9 text-neutral-400 max-md:max-w-full">Receive new promotions</h3>
+          <div className="flex mt-10  flex-col self-stretch max-md:max-w-full">
+            <h3 className="md:text-2xl text-lg font-bold leading-9 text-neutral-400 max-md:max-w-full">Receive new promotions</h3>
             <form className="flex gap-3 mt-3.5 text-lg leading-7 max-md:flex-wrap">
               <label htmlFor="email" className="sr-only">
                 Input your email

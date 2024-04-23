@@ -1,13 +1,13 @@
 const WhatsNew = () => {
   return (
-    <div className="w-full md:px-20 px-5 my-14 font-Poppins">
+    <div id="blog" className="w-full md:px-20 px-5 my-14 font-Poppins">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
         <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
           <div className="grow max-md:mt-6 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col self-stretch my-auto max-md:mt-10">
-                  <div className="md:text-[2.5rem] text-3xl font-bold leading-[68.16px] text-zinc-700">Read what’s new</div>
+                  <div className="md:text-[2.5rem] text-2xl font-bold leading-[68.16px] text-zinc-700">Read what’s new</div>
                   <div className="md:mt-14 text-base leading-7 tracking-wide md:tracking-wider font-light text-zinc-900  text-justify font-sans">
                     Read news feature allows users to stay updated with the latest information and developments, providing a seamless experience for accessing news content.
                   </div>

@@ -64,18 +64,22 @@ const OurProduct = () => {
 
   return (
     <div>
-      <div className="font-Poppins text-center text-3xl md:text-5xl md:mt-20 font-bold pt-20 md:pb-10 pb-3 leading-[68.16px] text-zinc-700">Our Products</div>
+      <div id="product" className="font-Poppins text-center text-3xl md:text-5xl md:mt-20 font-bold pt-20 md:pb-10 pb-3 leading-[68.16px] text-zinc-700">
+        Our Products
+      </div>
       <div className="flex justify-center items-center font-semibold gap-3">
         <button className="bg-cyan-400 border-[1px] border-cyan-500 text-white md:p-3 p-2 px-5 md:px-10 rounded-md">Best-Sellers</button>
         <button className="bg-white text-[#00BDD6] md:p-3 p-2 px-5 border-[1px] border-cyan-400 rounded-md md:px-10">New Product</button>
       </div>
       <Carousel responsive={responsive} itemClass="carousel-item-padding-80-px" infinite>
         {!loading ? (
-          <div>Loading..</div>
+          <div className="flex justify-center items-center h-screen">
+            <img width="48" height="48" src="https://img.icons8.com/color-glass/48/iphone-spinner.png" className="animate-spin" alt="iphone-spinner" />
+          </div>
         ) : (
-          products.map((item: productsType, index) => (
-            <div>
-              <CardProduct key={index} image={item.image} directId={() => handleDirectID(item.id)} description={item.description} price={item.price} originalPrice={item.originalPrice} title={item.title} />
+          products.map((item: productsType, index: number) => (
+            <div key={index}>
+              <CardProduct bestSeler image={item.image} key={item.id} directId={() => handleDirectID(item.id)} description={item.description} price={item.price} originalPrice={item.originalPrice} title={item.title} />
             </div>
           ))
         )}
