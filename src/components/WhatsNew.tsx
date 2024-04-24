@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 const WhatsNew = () => {
   const navigate = useNavigate();
   return (
-    <div id="blog" className="w-full md:px-20 px-5 my-14 font-Poppins">
+    <div id="blog" className="w-full lg:px-20 px-5 my-14 font-Poppins">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">
         <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
           <div className="grow max-md:mt-6 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col self-stretch my-auto max-md:mt-10">
-                  <div className="md:text-[2.5rem] text-2xl font-bold leading-[68.16px] text-zinc-700">Read what’s new</div>
-                  <div className="md:mt-14 text-base leading-7 tracking-wide md:tracking-wider font-light text-zinc-900  text-justify font-sans">
+                  <div className="lg:text-[2.5rem] md:text-[1.5rem] text-2xl font-bold leading-[68.16px] text-zinc-700">Read what’s new</div>
+                  <div className="lg:mt-5 text-base leading-7 tracking-wide md:tracking-wider font-light text-zinc-900  font-sans">
                     Read news feature allows users to stay updated with the latest information and developments, providing a seamless experience for accessing news content.
                   </div>
                   <div className="flex gap-5 justify-between mt-28 md:mb-0 mb-5 text-lg leading-7 text-cyan-500 max-md:pr-5 max-md:mt-10">

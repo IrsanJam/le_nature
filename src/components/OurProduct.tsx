@@ -64,7 +64,7 @@ const OurProduct = () => {
 
   return (
     <div>
-      <div id="product" className="font-Poppins text-center text-3xl md:text-5xl md:mt-20 font-bold pt-56 md:pb-10 pb-3 leading-[68.16px] text-zinc-700">
+      <div id="product" className="font-Poppins text-center text-3xl md:text-5xl md:mt-20 font-bold lg:pt-24 md:pt-0 pt-56 md:pb-10 pb-3 leading-[68.16px] text-zinc-700">
         Our Products
       </div>
       <div className="flex justify-center items-center font-semibold gap-3">

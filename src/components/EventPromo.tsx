@@ -21,7 +21,7 @@ const EventPromo = () => {
                   className="object-cover absolute inset-0 size-full rounded-md"
                 />
                 <div className="relative text-2xl md:text-3xl font-extrabold leading-10 w-[50%] md:w-[280px]">Relaxing & Pampering</div>
-                <div className="relative mt-6 text-xl leading-8 hidden md:block w-[60%] lg:font-thin drop-shadow-lg">Experience the ultimate relaxation and pampering with our </div>
+                <div className="relative mt-6 text-xl leading-8 hidden md:block w-[60%] md:font-thin drop-shadow-lg">Experience the ultimate relaxation and pampering with our </div>
                 <button className="hover:opacity-65 relative justify-center px-10 py-3 mt-9 text-sm leading-5 text-white whitespace-nowrap bg-cyan-500 rounded max-md:px-5 font-semibold tracking-wide">Explore</button>
               </div>
             </div>

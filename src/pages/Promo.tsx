@@ -5,10 +5,10 @@ const Promo = () => {
     <>
       <Layout>
         <div id="promo" className="flex flex-col pt-2.5 font-Poppins">
-          <div className="flex gap-5 justify-center items-center relative pt-28 md:pt-14">
+          <div className="flex gap-5 justify-center items-center relative pt-28 md:pt-36 lg:pt-14">
             <div className="flex flex-col justify-center  items-center gap-3 ">
               <span className="font-semibold text-[#484848] text-3xl md:text-4xl font-Poppins">Promo</span>
-              <p className="md:tracking-wide -tracking-normal md:w-[50vw] w-[85vw] px-8 md:px-8 text-center text-xs md:text-sm font-Poppins  text-[#8A8A8A]">
+              <p className="md:tracking-wide -tracking-normal lg:w-[50vw] md:w-[70vw] w-[85vw] px-8 md:px-8 text-center text-xs md:text-sm font-Poppins  text-[#8A8A8A]">
                 Shop now and enjoy exclusive discounts on our latest collection! <span className="hidden md:block">Shop today and elevate your shopping experience with us</span>
               </p>
               <div className="w-[20%] transition border-[1px] my-3 border-zinc-400"></div>
@@ -24,8 +24,8 @@ const Promo = () => {
                       srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/282de6895ee66cbffffe2c1d40fd1256a64ae4d7211095e415cf209eb88c676c?apiKey=5943fdb1ffaf406abdd952d3f158878b&"
                       className="object-cover absolute inset-0 size-full rounded-md"
                     />
-                    <div className="relative text-2xl font-extrabold leading-10 w-[50%]">Relaxing & Pampering</div>
-                    <div className="relative mt-6 text-md leading-8 hidden md:block w-[60%] lg:font-thin drop-shadow-lg">Experience the ultimate relaxation and pampering with our </div>
+                    <div className="relative text-2xl font-extrabold leading-10 w-[50%] md:w-[80%] lg:w-[50%]">Relaxing & Pampering</div>
+                    <div className="relative mt-6 text-md leading-8 hidden md:block w-[60%] md:w-[80%] lg:w-[60%] md:font-thin drop-shadow-lg">Experience the ultimate relaxation and pampering with our </div>
                     <button className="hover:opacity-65 relative justify-center px-10 py-3 mt-9 text-sm leading-5 text-white whitespace-nowrap bg-cyan-500 rounded max-md:px-5 font-semibold tracking-wide">Explore</button>
                   </div>
                 </div>

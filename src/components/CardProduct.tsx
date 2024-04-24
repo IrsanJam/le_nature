@@ -12,7 +12,7 @@ interface CardProps {
 
 const CardProduct: FC<CardProps> = ({ title, description, price, originalPrice, image, directId, bestSeler }) => {
   return (
-    <div className="flex flex-col  mx-auto my-5 lg:pb-10 md:h-[80vh] h-[60vh] w-[90%] bg-white rounded-lg  shadow-lg font-Poppins">
+    <div className="flex flex-col  mx-auto my-5 lg:pb-10 lg:h-[80vh] md:h-[50vh] h-[60vh] w-[90%] bg-white rounded-lg  shadow-lg font-Poppins">
       <div className="flex overflow-hidden relative flex-col items-end px-16 pt-3  w-full text-xs leading-5 text-white whitespace-nowrap aspect-[0.83] max-md:pl-5">
         <img loading="lazy" srcSet={image} className="object-cover absolute inset-0 size-full" />
         <div className="flex absolute flex-col justify-center mb-40 bg-black bg-opacity-0 w-[78px] max-md:mb-1 right-3">
