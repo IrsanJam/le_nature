@@ -39,12 +39,12 @@ const Instagram: React.FC = () => {
         ))}
       </section>
 
-      <section className="flex md:hidden w-full gap-2 mt-10 justify-center items-center">
+      <section className="flex md:hidden w-full gap-2 mt-10 overflow-hidden justify-center items-center">
         {images.slice(0, 2).map((image, index) => (
           <Image key={index} src={image.src} alt={image.alt} className={image.className} />
         ))}
       </section>
-      <section className="flex md:hidden w-full gap-2 mt-2 justify-center items-center">
+      <section className="flex md:hidden gap-2 mt-2 w-full overflow-hidden  justify-center items-center">
         {images.slice(10).map((image, index) => (
           <Image key={index} src={image.src} alt={image.alt} className={image.className} />
         ))}
