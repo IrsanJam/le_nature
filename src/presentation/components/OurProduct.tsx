@@ -1,33 +1,16 @@
 import { useEffect, useState } from "react";
 import CardProduct from "./CardProduct";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-interface productsType {
-  image: string;
-  description: string;
-  price: number;
-  originalPrice: number;
-  title: string;
-  id: string;
-}
+import { productsType } from "../../domain/model/product";
+import VM from "../vm/vm";
 
 const OurProduct = () => {
   const navigate = useNavigate();
   const [products, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
-
-  const loadProducts = async () => {
-    try {
-      const response = await axios.get("https://6621dbd527fcd16fa6c81620.mockapi.io/kecantikan");
-      setProduct(response.data);
-      setLoading(true);
-    } catch (error) {
-      setLoading(true);
-    }
-  };
+  const { getProduct } = VM();
 
   const handleDirectID = (id: string | number) => {
     if (id) {
@@ -40,7 +23,10 @@ const OurProduct = () => {
   };
 
   useEffect(() => {
-    loadProducts();
+    getProduct().then((data: any) => {
+      setProduct(data);
+      setLoading(true);
+    });
   }, []);
 
   const responsive = {

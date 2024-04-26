@@ -1,34 +1,15 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
-import axios from "axios";
 import CardProduct from "../components/CardProduct";
 import { useNavigate } from "react-router-dom";
-
-interface productsType {
-  image: string;
-  description: string;
-  price: number;
-  originalPrice: number;
-  title: string;
-  id: string;
-  directId?: () => void;
-  bestSeller: boolean;
-}
+import { productsType } from "../../domain/model/product";
+import VM from "../vm/vm";
 
 const Shop = () => {
   const [loading, setLoading] = useState(false);
   const [products, setProduct] = useState([]);
   const navigate = useNavigate();
-
-  const loadProducts = async () => {
-    try {
-      const response = await axios.get("https://6621dbd527fcd16fa6c81620.mockapi.io/kecantikan");
-      setProduct(response.data);
-      setLoading(true);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  const { getProduct } = VM();
 
   const handleDirectID = (id: string | number) => {
     if (id) {
@@ -41,7 +22,10 @@ const Shop = () => {
   };
 
   useEffect(() => {
-    loadProducts();
+    getProduct().then((data: any) => {
+      setProduct(data);
+      setLoading(true);
+    });
   }, []);
   return (
     <>
