@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../sharedComponents/components/Layout";
 
 const Story: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import logo from "../../../public/image/logo.png";
+import logo from "../../../../public/image/logo.png";
 import MobileNavbar from "./MobileNavbar";
 import { useNavigate } from "react-router-dom";
 

@@ -1,5 +1,5 @@
-import { Repository } from "../../domain/repository/repository";
 import axios from "axios";
+import { Repository } from "../../domain/repository/repository";
 
 export default class ApiProductDataSourceImpl implements Repository {
   async getProduct() {

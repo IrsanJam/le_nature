@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import Layout from "../components/Layout";
-import CardProduct from "../components/CardProduct";
+import Layout from "../../sharedComponents/components/Layout";
+import CardProduct from "../../sharedComponents/components/CardProduct";
 import { useNavigate } from "react-router-dom";
-import { productsType } from "../../domain/model/product";
-import VM from "../vm/vm";
+import { productShopType } from "./domain/model/model";
+import VM from "./presentation/vm/vm";
 
 const Shop = () => {
   const [loading, setLoading] = useState(false);
   const [products, setProduct] = useState([]);
   const navigate = useNavigate();
-  const { getProduct } = VM();
+  const { getProductShop } = VM();
 
   const handleDirectID = (id: string | number) => {
     if (id) {
@@ -22,7 +22,7 @@ const Shop = () => {
   };
 
   useEffect(() => {
-    getProduct().then((data: any) => {
+    getProductShop().then((data: any) => {
       setProduct(data);
       setLoading(true);
     });
@@ -45,7 +45,7 @@ const Shop = () => {
         ) : (
           <div id="produkContent" className={`content pb-10 md:pb-0 flex flex-col  justify-center items-center`}>
             <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 md:gap-8 gap-[1px] md:px-5 w-screen px-5 justify-center items-center md:w-[90vw]">
-              {products.map((item: productsType, index: number) => (
+              {products.map((item: productShopType, index: number) => (
                 <div key={index}>
                   <CardProduct bestSeler={false} image={item.image} directId={() => handleDirectID(item.id)} key={item.id} description={item.description} price={item.price} originalPrice={item.originalPrice} title={item.title} />
                 </div>
