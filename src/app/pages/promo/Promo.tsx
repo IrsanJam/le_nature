@@ -1,7 +1,19 @@
+import { useEffect, useState } from "react";
 import Layout from "../../sharedComponents/components/Layout";
 import CardPromo from "./presentation/components/CardPromo";
+import { promoType } from "./domain/model/model";
+import VM from "./presentation/vm/vm";
 
 const Promo = () => {
+  const [data, setData] = useState<promoType[]>([]);
+  const { getDataPromo } = VM();
+
+  useEffect(() => {
+    getDataPromo().then((res: promoType[]) => {
+      setData(res);
+    });
+  }, []);
+
   return (
     <>
       <Layout>
@@ -15,7 +27,11 @@ const Promo = () => {
               <div className="w-[20%] transition border-[1px] my-3 border-zinc-400"></div>
             </div>
           </div>
-          <CardPromo />
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:px-20 px-5">
+            {data.map((item, key) => (
+              <CardPromo key={key} title={item.title} description={item.description} image={item.image} />
+            ))}
+          </div>
         </div>
       </Layout>
     </>

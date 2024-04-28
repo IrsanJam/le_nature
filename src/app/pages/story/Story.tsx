@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../sharedComponents/components/Layout";
+import { testimoniType } from "./domain/model/model";
+import VM from "./presentation/VM/vm";
+import CardTestimoni from "./presentation/components/CardTestimoni";
 
 const Story: React.FC = () => {
+  const [data, setData] = useState<testimoniType[]>([]);
+  const { getTestimoni } = VM();
+  useEffect(() => {
+    getTestimoni().then((res: testimoniType[]) => {
+      setData(res);
+    });
+  }, []);
   return (
     <>
       <Layout>
@@ -27,18 +37,9 @@ const Story: React.FC = () => {
           <div className="container mx-auto px-4 md:px-20">
             <h2 className="text-xl font-bold mb-4">Testimonials</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-4 rounded-lg shadow-md">
-                <p className="md:text-base text-sm">"I've been using this beauty product for a month now, and I can't believe the difference it has made to my skin"</p>
-                <p className="text-sm mt-2">- Sandra</p>
-              </div>
-              <div className="bg-white p-4 rounded-lg shadow-md">
-                <p className="md:text-base text-sm">"I was skeptical at first, but this web many beauty products, I'm amazed at the resources"</p>
-                <p className="text-sm mt-2">- Cindy</p>
-              </div>
-              <div className="bg-white p-4 rounded-lg shadow-md">
-                <p className="md:text-base text-sm">"This web help to find beauty product, significant improvement"</p>
-                <p className="text-sm mt-2">- Lisa</p>
-              </div>
+              {data.map((item: testimoniType, key) => (
+                <CardTestimoni key={key} name={item.name} description={item.description} />
+              ))}
             </div>
           </div>
         </section>

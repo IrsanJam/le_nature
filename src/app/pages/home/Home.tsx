@@ -1,10 +1,10 @@
-import EventPromo from "../../sharedComponents/components/EventPromo";
-import Hero from "../../sharedComponents/components/Hero";
-import Instagram from "../../sharedComponents/components/Instagram";
 import Layout from "../../sharedComponents/components/Layout";
-import OurStory from "../../sharedComponents/components/OurStory";
-import OurProduct from "../../sharedComponents/components/OurProduct";
-import WhatsNew from "../../sharedComponents/components/WhatsNew";
+import OurProduct from "./presentation/components/OurProduct";
+import EventPromo from "./presentation/components/EventPromo";
+import Hero from "./presentation/components/Hero";
+import Instagram from "./presentation/components/Instagram";
+import OurStory from "./presentation/components/OurStory";
+import WhatsNew from "./presentation/components/WhatsNew";
 
 const Home = () => {
   return (

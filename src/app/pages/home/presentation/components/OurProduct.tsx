@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import CardProduct from "./CardProduct";
 import { useNavigate } from "react-router-dom";
+import CardProduct from "../../../../sharedComponents/components/CardProduct";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { productsType } from "../../pages/home/domain/model/product";
-import VM from "../../pages/home/presentation/vm/vm";
+import VM from "../vm/vm";
+import { productsType } from "../../domain/model/model";
 
 const OurProduct = () => {
   const navigate = useNavigate();
-  const [products, setProduct] = useState([]);
+  const [products, setProduct] = useState<productsType[]>([]);
   const [loading, setLoading] = useState(false);
   const { getProduct } = VM();
 
@@ -23,7 +23,7 @@ const OurProduct = () => {
   };
 
   useEffect(() => {
-    getProduct().then((data: any) => {
+    getProduct().then((data: productsType[]) => {
       setProduct(data);
       setLoading(true);
     });

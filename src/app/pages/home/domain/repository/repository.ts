@@ -1,5 +1,5 @@
-import { productsType } from "../model/product";
+import { productsType } from "../model/model";
 
 export interface Repository {
-  getProduct(): Promise<productsType>;
+  getProduct(): Promise<productsType[]>;
 }

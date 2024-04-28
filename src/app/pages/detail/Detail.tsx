@@ -21,7 +21,7 @@ const Detail = () => {
 
   useEffect(() => {
     const idData = location.state.id;
-    getDetailProduct(idData).then((data: any) => {
+    getDetailProduct(idData).then((data: detailProduct) => {
       setData(data);
       setLoading(true);
     });
