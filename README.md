@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# le_nature (Clean Architecture Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is simple project, based on clean architecture
 
 Currently, two official plugins are available:
 
