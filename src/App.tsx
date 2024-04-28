@@ -6,6 +6,7 @@ import Story from "./app/pages/story/Story";
 import Detail from "./app/pages/detail/Detail";
 import Home from "./app/pages/home/Home";
 
+
 function App() {
   return (
     <>
