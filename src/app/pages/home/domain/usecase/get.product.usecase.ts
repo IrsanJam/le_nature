@@ -1,4 +1,4 @@
-import { productsType } from "../model/model";
+import { productsType } from "../model/product";
 import { Repository } from "../repository/repository";
 
 export class GetProductUseCase {
