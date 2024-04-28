@@ -4,7 +4,7 @@ import CardProduct from "../../../../sharedComponents/components/CardProduct";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import VM from "../vm/vm";
-import { productsType } from "../../domain/model/model";
+import { productsType } from "../../domain/model/product";
 
 const OurProduct = () => {
   const navigate = useNavigate();
