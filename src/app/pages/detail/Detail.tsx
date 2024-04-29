@@ -26,6 +26,7 @@ const Detail = () => {
       setLoading(true);
     });
   }, []);
+
   return (
     <>
       <Layout>
