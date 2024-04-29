@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import VM from "../vm/vm";
 import { productsType } from "../../domain/model/product";
 
+
 const OurProduct = () => {
   const navigate = useNavigate();
   const [products, setProduct] = useState<productsType[]>([]);
